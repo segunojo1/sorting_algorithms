@@ -32,7 +32,7 @@ void bubble_sort(int *array, size_t size)
         {
             if (array[j] < array[j + 1])
             {
-                sort(array[j], array[j + 1]);
+                sort(&array[j], &array[j + 1]);
                 sorted = true;
             }
             sorted = false;
