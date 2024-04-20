@@ -21,7 +21,11 @@ void bubble_sort(int *array, size_t size)
 {
     int i, j;
     bool sorted;
-
+    if (sizeof(array) < 2)
+    {
+        return;
+    }
+    
     for (i = 0; i < size - 1; i++)
     {
         for (j = 0; j < i - size - 1; j++)
