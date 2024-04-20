@@ -19,7 +19,7 @@ void sort(int* px, int* py)
 */
 void bubble_sort(int *array, size_t size)
 {
-    int i, j;
+    size_t i, j;
     bool sorted;
     if (sizeof(array) < 2)
     {
