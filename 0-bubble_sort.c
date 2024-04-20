@@ -21,24 +21,22 @@ void bubble_sort(int *array, size_t size)
 {
     size_t i, j;
     bool sorted;
-    /**if (sizeof(array) < 2)
-     * {
-     *     return;
-     * }
-    */
     
     for (i = 0; i < size - 1; i++)
     {
+        sorted = false;
         for (j = 0; j < i - size - 1; j++)
         {
-            if (array[j] < array[j + 1])
+            if (array[j] > array[j + 1])
             {
                 sort(&array[j], &array[j + 1]);
                 sorted = true;
             }
-            sorted = false;
         }
-        sorted = false;
-        break;
+        if (sorted == false)
+        {
+            break;
+        }
+        
     }
 }
